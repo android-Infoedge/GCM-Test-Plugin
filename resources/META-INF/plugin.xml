@@ -1,0 +1,36 @@
+<idea-plugin version="2">
+  <id>com.infoedge.plugins.gcmtester</id>
+  <name>GCM Test Tool</name>
+  <version>1.0</version>
+  <vendor>Info Edge India Limited</vendor>
+  <vendor email="droiddev.infoedge@gmail.com">Info Edge India Limited</vendor>
+
+
+  <description><![CDATA[
+      Allows sending test GCM to android device right from android studio.<br>
+      Now there is not need to write curl command or php script just to test GCM.<br>
+      After installation run tools, <b>Tools -> GCM Test Tool</b>
+    ]]></description>
+
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+
+    <action id="GcmTester.Action" class="com.infoedge.plugin.gcmtester.actions.GcmParamsInputAction" text="GCM Test Tool">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>

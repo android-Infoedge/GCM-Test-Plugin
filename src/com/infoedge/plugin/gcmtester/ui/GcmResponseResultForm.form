@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.infoedge.plugin.gcmtester.ui.GcmResponseResultPanel">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="800" height="450"/>
+    </constraints>
+    <properties>
+      <maximumSize width="800" height="450"/>
+      <minimumSize width="800" height="450"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="8d551">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="800" height="400"/>
+            <maximum-size width="20000" height="20000"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="5e086" class="javax.swing.JTable" binding="gcmResultsTable">
+            <constraints/>
+            <properties>
+              <maximumSize width="800" height="400"/>
+              <minimumSize width="800" height="400"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="7f9fe" layout-manager="FlowLayout" hgap="20" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="700f1" class="javax.swing.JLabel" binding="resultTotalLabel">
+            <constraints/>
+            <properties>
+              <text value="Total"/>
+            </properties>
+          </component>
+          <component id="e837d" class="javax.swing.JLabel" binding="resultSuccessLabel">
+            <constraints/>
+            <properties>
+              <foreground color="-14358516"/>
+              <text value="Success"/>
+            </properties>
+          </component>
+          <component id="9017a" class="javax.swing.JLabel" binding="resultFailureLabel">
+            <constraints/>
+            <properties>
+              <foreground color="-1560557"/>
+              <text value="Failure"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
